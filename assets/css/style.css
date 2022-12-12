@@ -1,3 +1,58 @@
-btn btn-outline-success {
-  color: orange;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "inter";
+  color: #343a40ff;
+}
+
+.navbar {
+  background-image: linear-gradient(-90deg, #63e6be, #74c0fc);
+  /* teal 3 and cyan 3 from opencolor.com */
+}
+
+.nav-link {
+  font-size: 16px;
+  color: white !important;
+  font-weight: 500;
+}
+
+/* Header/Navigation  */
+
+.nav-link:hover {
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* Appear on right side when hamburger appears */
+@media (max-width: 1000px) {
+  .nav-link {
+    text-align: right;
+  }
+}
+
+/* Main */
+
+/* Hero */
+
+.jumbotron {
+  height: 100vh;
+  background-image: url(../images/laptop1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-container h1 {
+  font-weight: 600;
 }
