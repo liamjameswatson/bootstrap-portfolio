@@ -1,14 +1,14 @@
 # bootstrap-portfolio
+
 A portfolio made with bootstrap components
 
-
 # Description
-A new portfolio website using my newly found bootstrap skills
--
+
+## A new portfolio website using my newly found bootstrap skills
 
 # Usage
--
 
+-
 
 # Screenshot
 
@@ -18,6 +18,6 @@ A new portfolio website using my newly found bootstrap skills
 
 -
 
-
 # License
+
 MIT License (Please refer to LICENSE in the repo.)
