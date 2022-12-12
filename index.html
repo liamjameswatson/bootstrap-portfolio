@@ -5,177 +5,236 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap -->
+    <!-- Google fonts   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Liam Watson</title>
   </head>
   <body>
-    <!-- Nav  -->
+    <!-- Navigation bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand nav-link" href="#">LW</a>
+        <!-- hamburger bar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-      <div class="container">
-          <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-          <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-              <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-
-    <!-- Jumbotron/Hero -->
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Hero</h1>
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p>
-      </div>
-    </div>
-
-    <!-- Work/project- cards -->
-    <section>
-      <h2>My Work projects</h2>
-      <div class="row">
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      </nav>
+      <!-- End Navigation bar -->
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container hero-container">
+            <h1 class="display-4">Hello</h1>
+            <h2>I'm Liam</h2>
+            <p class="lead">A Front end web developer</p>
+            <p>Welcome to my website...</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- A skills section -->
-    <section>
-      <h2>My Skills</h2>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- about  -->
-    <section>
-      <h2>About Me</h2>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact section -->
-    <section>
-      <h2>Contact Me</h2>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
-        </div>
-        <!-- contact form -->
-        <form>
-          <div class="form-row">
-            <div class="col">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="First name"
-              />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" />
+      <!-- Work/project- cards -->
+      <section>
+        <h2>My Work projects</h2>
+        <div class="row">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-        </form>
-      </div>
-    </section>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- A skills section -->
+      <section>
+        <h2>My Skills</h2>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">
+              This is a modified jumbotron that occupies the entire horizontal
+              space of its parent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about  -->
+      <section>
+        <h2>About Me</h2>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">
+              This is a modified jumbotron that occupies the entire horizontal
+              space of its parent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section>
+        <h2>Contact Me</h2>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">
+              This is a modified jumbotron that occupies the entire horizontal
+              space of its parent.
+            </p>
+          </div>
+          <!-- contact form -->
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <!-- footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
