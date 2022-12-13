@@ -74,10 +74,12 @@
       <section class="hero">
         <div class="jumbotron jumbotron-fluid">
           <div class="container hero-container">
-            <h1 class="display-4">Hello</h1>
-            <h2>I'm Liam</h2>
-            <p class="lead">A Front end web developer</p>
-            <p>Welcome to my website...</p>
+            <div class="hero-greeting">
+              <h1 class="display-4">Hello</h1>
+              <h2>I'm Liam</h2>
+              <p class="lead">A Front end web developer</p>
+              <p>Welcome to my website...</p>
+            </div>
           </div>
         </div>
       </section>
@@ -101,7 +103,7 @@
                   class="card-img-top"
                   alt="Screenshot of CSS grid cheatsheet"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">CSS Cheatsheet</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -109,7 +111,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary"
+                    class="btn btn btn-lg btn-block mt-auto project-button"
                     data-toggle="modal"
                     data-target="#modal-project-one"
                     >View</a
@@ -127,7 +129,7 @@
                   class="card-img-top"
                   alt="Screenshot of world cup tracker"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">World Cup Tracker</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -135,7 +137,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary"
+                    class="btn btn btn-lg btn-block mt-auto project-button"
                     data-toggle="modal"
                     data-target="#modal-project-two"
                     >View</a
@@ -153,7 +155,7 @@
                   class="card-img-top"
                   alt="Screenshot of Horiseon website"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Horiseon refractoring project</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -161,7 +163,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary"
+                    class="btn btn btn-lg btn-block mt-auto project-button"
                     data-toggle="modal"
                     data-target="#modal-project-three"
                     >View</a
@@ -179,7 +181,7 @@
                   class="card-img-top"
                   alt="Screenshot of furniture shop website"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Furniture shop</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -187,7 +189,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary"
+                    class="btn btn btn-lg btn-block mt-auto project-button"
                     data-toggle="modal"
                     data-target="#modal-project-four"
                     >View</a
@@ -205,7 +207,7 @@
                   class="card-img-top"
                   alt="Screenshot of rock nation website"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Rock Nation</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -213,7 +215,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary"
+                    class="btn btn btn-lg btn-block mt-auto project-button"
                     data-toggle="modal"
                     data-target="#modal-project-five"
                     >View</a
@@ -231,7 +233,7 @@
                   class="card-img-top"
                   alt="Screenshot of prework"
                 />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Study guide</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -239,7 +241,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary"
+                    class="btn btn btn-lg btn-block mt-auto project-button"
                     data-toggle="modal"
                     data-target="#modal-project-six"
                     >View</a
@@ -272,6 +274,11 @@
                 <p>Modal body text goes here.</p>
               </div>
               <div class="modal-footer">
+                <a
+                  class="btn-btn-primary"
+                  href="https://liamjameswatson.github.io/world-cup-tracker/"
+                  >Go to site</a
+                >
                 <button type="button" class="btn btn-primary">
                   Go to site
                 </button>
@@ -468,29 +475,31 @@
 
       <!-- A skills section -->
       <section id="skills">
-        <h2>My Skills</h2>
         <div class="jumbotron jumbotron-fluid">
           <div class="container-fluid">
+            <h2>My Skills</h2>
             <div class="row">
-              <div class="col-3">
-                <i class="fa-brands fa-html5"></i>
-                <p>HTML</p>
+              <div class="col-3 text-center">
+                <i class="fa-brands icon-logo fa-html5"></i>
+                <p class="skills-title">HTML</p>
                 <i class="fa-regular fa-square-check"></i>
               </div>
-              <div class="col-3">
-                <i class="fa-brands fa-css3-alt"></i>
-                <p>CSS</p>
+              <div class="col-3 text-center">
+                <i class="fa-brands icon-logo fa-css3-alt"></i>
+                <p class="skills-title">CSS</p>
                 <i class="fa-regular fa-square-check"></i>
               </div>
-              <div class="col-3">
-                <i class="fa-brands fa-bootstrap"></i>
-                <p>Bootstrap</p>
+              <div class="col-3 text-center">
+                <i class="fa-brands icon-logo fa-bootstrap"></i>
+                <p class="skills-title">Bootstrap</p>
                 <i class="fa-regular fa-square-check"></i>
               </div>
-              <div class="col-3">
-                <i class="fa-brands fa-js"></i>
-                <p>Javascript</p>
-                <button disabled="disabled">Coming Soon</button>
+              <div class="col-3 text-center">
+                <i class="fa-brands icon-logo fa-js"></i>
+                <p class="skills-title">Javascript</p>
+                <button type="button" class="btn btn js-button btn-lg" disabled>
+                  Coming Soon
+                </button>
               </div>
             </div>
           </div>
@@ -499,11 +508,11 @@
 
       <!-- about  -->
       <section id="about">
-        <h2>About Me</h2>
         <div class="jumbotron jumbotron-fluid">
+          <h2>About Me</h2>
           <div class="container">
             <div class="row">
-              <div class="col">
+              <div class="col flex-column">
                 <img
                   class="profile-pic"
                   src="./assets/images/profile-pic.jpg"
@@ -511,7 +520,7 @@
                 />
               </div>
 
-              <div class="col">
+              <div class="col about-content">
                 Hi, I'm Liam, a front-end developer, who likes building things
                 with code. Currently living in sunny Devon, England, I recently
                 began my journey into the world of web development. I have
@@ -529,8 +538,8 @@
 
       <!-- contact section -->
       <section id="contact">
-        <h2>Contact Me</h2>
         <div class="jumbotron jumbotron-fluid">
+          <h2>Contact Me</h2>
           <div class="container">
             <!-- contact form -->
 
@@ -569,17 +578,18 @@
                   </div>
                   <div class="valid-feedback">Looks good!</div>
                 </div>
-              </div>
-              <div class="col-md-7 col-sm-10">
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1"></label>
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="Message"
-                    required
-                  ></textarea>
+
+                <div class="col-md-7 col-sm-10">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
                 </div>
               </div>
               <button class="btn btn-primary" type="submit">
@@ -597,21 +607,21 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-3">
+            <div class="col-4 text-center">
               <a href="https://github.com/liamjameswatson">
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github icon-footer"></i>
                 <p>Github</p>
               </a>
             </div>
-            <a href="https://twitter.com/">
-              <div class="col-3">
-                <i class="fa-brands fa-twitter"></i>
+            <div class="col-4 text-center">
+              <a href="https://twitter.com/">
+                <i class="fa-brands fa-twitter icon-footer"></i>
                 <p>Twitter</p>
-              </div>
-            </a>
-            <div class="col-3">
+              </a>
+            </div>
+            <div class="col-4 text-center">
               <a href="mailto:liamjwatson@aol.com">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-envelope icon-footer"></i>
                 <p>Email</p>
               </a>
             </div>
@@ -619,11 +629,12 @@
         </div>
       </div>
       <div>
-        <a href="#header"
-          ><i class="fa-solid fa-arrow-up"></i>Back to the top<i
-            class="fa-solid fa-arrow-up"
-          ></i
-        ></a>
+        <div class="text-center">
+          <a href="#" class="btn return-button btn-lg btn-block mt-auto"
+            ><i class="fa-solid fa-arrow-up"></i>Back to the top
+            <i class="fa-solid fa-arrow-up"></i
+          ></a>
+        </div>
       </div>
     </footer>
 
