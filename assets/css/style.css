@@ -1,3 +1,4 @@
+/* General styles/Whole page */
 * {
   margin: 0px;
   padding: 0px;
@@ -12,11 +13,37 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Header/Navigation  */
+/* Whitespace between sections/section headers */
+section {
+  padding-bottom: 64px;
+}
+
+h2 {
+  margin: 0 0 20px 8px;
+}
+
+.row {
+  margin: 18px 0;
+}
+
+.project-button {
+  background-color: #1db588;
+  color: white;
+}
+
+.project-button:hover,
+.project-button:active {
+  background-color: #168d6a;
+  color: white;
+}
+
+/* End General styles/Whole page */
+
+/*Nav/ Header  */
 
 .navbar {
   background-image: linear-gradient(-90deg, #63e6be, #74c0fc);
-  /* teal 3 and cyan 3 from opencolor.com */
+  /* teal 3 and blue 3 from opencolor.com */
 }
 
 .nav-link {
@@ -46,10 +73,19 @@ html {
     text-align: right;
   }
 }
+/* End Nav/Header */
 
 /* Main */
 
-/* Hero */
+main,
+.jumbotron,
+.footer {
+  background-color: #f1f9ff;
+}
+/* Hero Section */
+.hero {
+  margin: 0;
+}
 
 .hero .jumbotron {
   height: 100vh;
@@ -63,14 +99,111 @@ html {
   font-weight: 600;
 }
 
-.card-img-top {
-  height: 200px;
+.hero-greeting h2 {
+  margin: 0;
 }
 
-/* Skill section */
+/* End Hero Section */
+/* Work Projects */
 
-/* About section */
+.card {
+  box-shadow: 30px 30px 30px rgba(15, 15, 13, 0.04);
+  height: 60vh;
+  margin: 12px;
+}
 
+.card:hover {
+  box-shadow: 30px 30px 30px rgba(15, 15, 13, 0.04);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.card-img-top {
+  height: 25vh;
+}
+
+.card-body {
+  height: 30vh;
+}
+
+/* Modals */
+
+.modal-content {
+  height: 75vh;
+  width: 50vw;
+}
+/* End Work Projects Section */
+
+/* Work Projects Section */
+#work .container-fluid {
+  background-color: #f1f9ff;
+}
+
+/* End Work Projects Section*/
+
+/* Skill Section */
+#about .jumbotron {
+  background-color: #effdf9;
+}
+
+/* Logos */
+.icon-logo {
+  color: #228be6;
+  font-size: 64px;
+  margin: 32px 0 12px 0;
+}
+
+.fa-square-check {
+  color: #1db588;
+  font-size: 64px;
+}
+
+.js-button {
+  color: rgb(63, 62, 62);
+  margin: 10px;
+  padding: 12px;
+  background-color: #1db58733;
+}
+
+.skills-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+/* End Skill Section */
+
+/* About Section */
 .profile-pic {
   border-radius: 100%;
+}
+
+.about-content {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* End About Section */
+
+footer,
+footer .jumbotron {
+  background-color: #effdf9;
+}
+
+.icon-footer {
+  color: black;
+  font-size: 32px;
+  margin: 32px 0 12px 0;
+}
+
+.return-button {
+  color: white;
+  background-color: #168d6a;
+}
+
+.return-button:hover {
+  color: white;
+  background-color: #168d6a;
+}
+
+.fa-arrow-up {
+  color: white;
+  margin: 0 24px;
 }
