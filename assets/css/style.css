@@ -6,6 +6,14 @@
   color: #343a40ff;
 }
 
+/* Smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header/Navigation  */
+
 .navbar {
   background-image: linear-gradient(-90deg, #63e6be, #74c0fc);
   /* teal 3 and cyan 3 from opencolor.com */
@@ -16,8 +24,6 @@
   color: white !important;
   font-weight: 500;
 }
-
-/* Header/Navigation  */
 
 .nav-link:hover {
   font-weight: 600;
