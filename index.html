@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <header>
+    <header id="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand nav-link" href="#">LW</a>
         <!-- hamburger bar -->
@@ -52,16 +52,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -83,7 +83,7 @@
       </section>
 
       <!-- My work projects -->
-      <section id="project-cards">
+      <section id="work">
         <div class="container-fluid content">
           <h2 class="sectionHeading">Some recent projects...</h2>
           <p>
@@ -107,7 +107,13 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View</a>
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modal-project-one"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -127,7 +133,13 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View</a>
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modal-project-two"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -147,7 +159,13 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View </a>
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modal-project-three"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -167,7 +185,13 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View</a>
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modal-project-four"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -187,7 +211,13 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View </a>
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modal-project-five"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
@@ -207,19 +237,237 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View</a>
+                  <a
+                    href="#"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modal-project-six"
+                    >View</a
+                  >
                 </div>
               </div>
             </div>
             <!-- End card 6 -->
           </div>
         </div>
+
+        <!-- Modals -->
+
+        <!-- Modal Project One -->
+        <div class="modal fade" id="modal-project-one">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Go to site
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal Project One -->
+
+        <!-- Modal Project Two -->
+        <div class="modal fade" id="modal-project-two">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Go to site
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal Project Two -->
+
+        <!-- Modal Project Three -->
+        <div class="modal fade" id="modal-project-three">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Go to site
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal Project Three -->
+
+        <!-- Modal Project Four -->
+        <div class="modal fade" id="modal-project-four">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Go to site
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal Project Four -->
+
+        <!-- Modal Project Five -->
+        <div class="modal fade" id="modal-project-five">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Go to site
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal Project Five -->
+
+        <!-- Modal Project Six -->
+        <div class="modal fade" id="modal-project-six">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Go to site
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal Project Six -->
       </section>
 
       <!-- Work/project- cards -->
 
       <!-- A skills section -->
-      <section>
+      <section id="skills">
         <h2>My Skills</h2>
         <div class="jumbotron jumbotron-fluid">
           <div class="container-fluid">
@@ -250,7 +498,7 @@
       </section>
 
       <!-- about  -->
-      <section>
+      <section id="about">
         <h2>About Me</h2>
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
@@ -280,40 +528,104 @@
       </section>
 
       <!-- contact section -->
-      <section>
+      <section id="contact">
         <h2>Contact Me</h2>
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">
-              This is a modified jumbotron that occupies the entire horizontal
-              space of its parent.
-            </p>
+            <!-- contact form -->
+
+            <form
+              class="needs-validation"
+              action="https://formsubmit.co/liamjwatson@aol.com"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="col-md-7 sm-10">
+                  <label for="validationCustom01"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="Name"
+                    value=""
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-md-7 sm-10">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      required
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >I'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-10">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"></label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">
+                Send message
+              </button>
+            </form>
           </div>
-          <!-- contact form -->
-          <form>
-            <div class="form-row">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Last name"
-                />
-              </div>
-            </div>
-          </form>
         </div>
       </section>
     </main>
 
     <!-- footer -->
+    <footer>
+      <h2>Other places to find me</h2>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3">
+              <a href="https://github.com/liamjameswatson">
+                <i class="fa-brands fa-github"></i>
+                <p>Github</p>
+              </a>
+            </div>
+            <a href="https://twitter.com/">
+              <div class="col-3">
+                <i class="fa-brands fa-twitter"></i>
+                <p>Twitter</p>
+              </div>
+            </a>
+            <div class="col-3">
+              <a href="mailto:liamjwatson@aol.com">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#header"
+          ><i class="fa-solid fa-arrow-up"></i>Back to the top<i
+            class="fa-solid fa-arrow-up"
+          ></i
+        ></a>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -332,5 +644,38 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Script for form validation -->
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
   </body>
 </html>
