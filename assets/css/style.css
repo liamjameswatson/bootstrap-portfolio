@@ -32,6 +32,7 @@ h2 {
 
 .project-button {
   background-color: #1db588;
+  border-radius: 24px;
   color: white;
 }
 
@@ -39,6 +40,11 @@ h2 {
 .project-button:active {
   background-color: #168d6a;
   color: white;
+  box-shadow: 10px 10px 10px #168d693f;
+}
+
+.project-button:active {
+  font-weight: 700;
 }
 
 /* End General styles/Whole page */
@@ -120,42 +126,57 @@ main,
 /* End Hero Section */
 /* Work Projects */
 
-.card {
-  box-shadow: 30px 30px 30px rgba(15, 15, 13, 0.04);
-  height: 60vh;
-  margin: 12px;
-}
-
 .card:hover {
   box-shadow: 30px 30px 30px rgba(15, 15, 13, 0.04);
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 0.3s;
 }
 .card-img-top {
-  background-color: rgba(8, 212, 248, 0.326);
   padding: 5px;
   height: 25vh;
+  border-radius: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .card-body {
   height: 30vh;
+  background-color: white;
+}
+
+.card {
+  border: 10px solid rgba(13, 189, 224, 0.119);
+  margin: 5% auto;
+  width: 25vw;
+  height: 70vh;
+  border-radius: 24px;
+}
+
+.card-body {
+  border-radius: 24px;
 }
 
 /* Modals */
-
 .modal {
-  height: 10px;
+  border-radius: 24px;
 }
 
-img {
+.modal-footer a {
+  background-color: #1db588;
+  border-radius: 24px;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.modal-content {
-  height: 75vh;
-  width: 50vw;
+.modal-footer a:hover {
+  background-color: #168d6a;
+  box-shadow: 10px 10px 10px #168d693f;
 }
-
-/* End Work Projects Section */
+/* End Work Projects Section
 
 /* Work Projects Section */
 #work .container-fluid {
