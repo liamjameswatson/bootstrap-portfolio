@@ -14,8 +14,12 @@ html {
 }
 
 /* Whitespace between sections/section headers */
-section {
+/* Select all but not hero. */
+section:not(:first-child) {
   padding-bottom: 64px;
+}
+.hero {
+  padding-bottom: 2%;
 }
 
 h2 {
@@ -90,10 +94,21 @@ main,
 .hero .jumbotron {
   height: 100vh;
   background-image: url(../images/laptop1.jpg);
-  background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
+
+/* @media (max-width: 1200px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero .jumbotron {
+    background-size: 100%;
+  }
+} */
 
 .hero-container h1 {
   font-weight: 600;
@@ -118,6 +133,8 @@ main,
   transition: 0.3s;
 }
 .card-img-top {
+  background-color: rgba(8, 212, 248, 0.326);
+  padding: 5px;
   height: 25vh;
 }
 
@@ -127,10 +144,18 @@ main,
 
 /* Modals */
 
+.modal {
+  height: 10px;
+}
+
+img {
+}
+
 .modal-content {
   height: 75vh;
   width: 50vw;
 }
+
 /* End Work Projects Section */
 
 /* Work Projects Section */
