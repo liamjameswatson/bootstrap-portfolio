@@ -96,7 +96,7 @@
           </p>
           <div class="row">
             <!-- Card 1 -->
-            <div class="card-container col-lg-4 col-md-4 col-sm-6">
+            <div class="card-container col-lg-4 col-md-6 col-sm-12">
               <div class="frame">
                 <div class="card">
                   <img
@@ -123,7 +123,7 @@
             <!-- End card 1 -->
 
             <!-- Card 2 -->
-            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+            <div class="cardContainer col-lg-4 col-md-6 col-sm-12">
               <div class="card">
                 <img
                   src="./assets/screenshots/world-cup-tracker.png"
@@ -148,7 +148,7 @@
             <!-- End card 2 -->
 
             <!-- Card 3 -->
-            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+            <div class="cardContainer col-lg-4 col-md-6 col-sm-12">
               <div class="card">
                 <img
                   src="./assets/screenshots/horiseon-screenshot.jpg"
@@ -173,13 +173,15 @@
             <!-- End card 3 -->
 
             <!-- Card 4 -->
-            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+            <div class="cardContainer col-lg-4 col-md-6 col-sm-12">
               <div class="card">
-                <img
-                  src="./assets/screenshots/furniture-shop.png"
-                  class="card-img-top"
-                  alt="Screenshot of furniture shop website"
-                />
+                <div>
+                  <img
+                    src="./assets/screenshots/furniture-shop.png"
+                    class="card-img-top"
+                    alt="Screenshot of furniture shop website"
+                  />
+                </div>
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Furniture shop</h5>
                   <p class="card-text">
@@ -198,13 +200,15 @@
             <!-- End card 4 -->
 
             <!-- Card 5 -->
-            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+            <div class="cardContainer col-lg-4 col-md-6 col-sm-12">
               <div class="card">
-                <img
-                  src="./assets/screenshots/rockOn.jpg"
-                  class="card-img-top"
-                  alt="Screenshot of rock nation website"
-                />
+                <div>
+                  <img
+                    src="./assets/screenshots/rockOn.jpg"
+                    class="card-img-top"
+                    alt="Screenshot of rock nation website"
+                  />
+                </div>
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Rock Nation</h5>
                   <p class="card-text">A music website for rockers...</p>
@@ -221,13 +225,15 @@
             <!-- End card 5 -->
 
             <!-- Card 6 -->
-            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+            <div class="cardContainer col-lg-4 col-md-6 col-sm-12">
               <div class="card">
-                <img
-                  src="./assets/screenshots/pre-work-screeenshot.jpg"
-                  class="card-img-top"
-                  alt="Screenshot of prework"
-                />
+                <div>
+                  <img
+                    class="card-img-top"
+                    src="./assets/screenshots/pre-work-screeenshot.jpg"
+                    alt="Screenshot of prework"
+                  />
+                </div>
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Study guide</h5>
                   <p class="card-text">
@@ -251,10 +257,10 @@
 
         <!-- Modal Project One -->
         <div class="modal fade" id="css-cheatsheet">
-          <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">css cheatsheet</h5>
+                <h5 class="modal-title">CSS cheatsheet</h5>
                 <button
                   type="button"
                   class="close"
@@ -264,13 +270,6 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <hr />
-              <img
-                src="./assets/screenshots/css-grid-cheatsheet.png"
-                class="card-img-top"
-                alt="Screenshot of CSS grid cheatsheet"
-              />
-              <hr />
               <div class="modal-body">
                 <p>
                   A Css cheatsheet for a reminder of css grid and flexbox. It
@@ -282,13 +281,9 @@
               <div class="modal-footer">
                 <a
                   class="btn-btn-primary"
-                  href="https://liamjameswatson.github.io/world-cup-tracker/"
+                  href="./assets/projects/css-grid-cheatsheet/index.html"
+                  >Go to site</a
                 >
-                  <button type="button" class="btn btn-primary">
-                    Go to site
-                  </button></a
-                >
-
                 <button
                   type="button"
                   class="btn btn-secondary"
@@ -300,6 +295,7 @@
             </div>
           </div>
         </div>
+
         <!-- End Modal Project One -->
 
         <!-- Modal Project Two -->
@@ -376,9 +372,11 @@
                 </p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">
-                  Go to site
-                </button>
+                <a
+                  class="btn-btn-primary"
+                  href="./assets/projects/furniture-shop/index.html"
+                  >Go to site</a
+                >
                 <button
                   type="button"
                   class="btn btn-secondary"
@@ -522,6 +520,7 @@
             </div>
           </div>
         </div>
+
         <!-- End Modal Project Six -->
       </section>
 
@@ -529,76 +528,71 @@
 
       <!-- A skills section -->
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <section id="skills">
-              <div class="jumbotron jumbotron-fluid">
-                <div class="container-fluid">
-                  <h2>My Skills</h2>
-                  <div class="row">
-                    <div class="col-3 text-center">
-                      <i class="fa-brands icon-logo fa-html5"></i>
-                      <p class="skills-title">HTML</p>
-                      <i class="fa-regular fa-square-check"></i>
-                    </div>
-                    <div class="col-3 text-center">
-                      <i class="fa-brands icon-logo fa-css3-alt"></i>
-                      <p class="skills-title">CSS</p>
-                      <i class="fa-regular fa-square-check"></i>
-                    </div>
-                    <div class="col-3 text-center">
-                      <i class="fa-brands icon-logo fa-bootstrap"></i>
-                      <p class="skills-title">Bootstrap</p>
-                      <i class="fa-regular fa-square-check"></i>
-                    </div>
-                    <div class="col-3 text-center">
-                      <i class="fa-brands icon-logo fa-js"></i>
-                      <p class="skills-title">Javascript</p>
-                      <button
-                        type="button"
-                        class="btn btn js-button btn-lg"
-                        disabled
-                      >
-                        Coming Soon
-                      </button>
-                    </div>
-                  </div>
+        <section id="skills">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+              <h2>My Skills</h2>
+              <div class="row">
+                <div class="col-3 text-center">
+                  <i class="fa-brands icon-logo fa-html5"></i>
+                  <p class="skills-title">HTML</p>
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="col-3 text-center">
+                  <i class="fa-brands icon-logo fa-css3-alt"></i>
+                  <p class="skills-title">CSS</p>
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="col-3 text-center">
+                  <i class="fa-brands icon-logo fa-bootstrap"></i>
+                  <p class="skills-title">Bootstrap</p>
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="col-3 text-center">
+                  <i class="fa-brands icon-logo fa-js"></i>
+                  <p class="skills-title">Javascript</p>
+                  <button
+                    type="button"
+                    class="btn btn js-button btn-lg"
+                    disabled
+                  >
+                    Coming Soon
+                  </button>
                 </div>
               </div>
-            </section>
-
-            <!-- about  -->
-            <section id="about">
-              <div class="jumbotron jumbotron-fluid">
-                <h2>About Me</h2>
-                <div class="container">
-                  <div class="row">
-                    <div class="col flex-column">
-                      <img
-                        class="profile-pic"
-                        src="./assets/images/profile-pic.jpg"
-                        alt="Profile pic"
-                      />
-                    </div>
-
-                    <div class="col about-content">
-                      Hi, I'm Liam, a front-end developer, who likes building
-                      things with code. Currently living in sunny Devon,
-                      England, I recently began my journey into the world of web
-                      development. I have worked many civil
-                      engineering/construction and mining projects before, so I
-                      enjoy building things and watching things grow I am
-                      constantly learning, and growing as I as I try not get
-                      bombarded by information overload. When I am not working
-                      on coding projects, I like chess, sea swimming, and gym
-                      work. You will ofen find me dog walking or star gazing.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <!-- about  -->
+        <section id="about">
+          <div class="jumbotron jumbotron-fluid">
+            <h2>About Me</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col flex-column">
+                  <img
+                    class="profile-pic"
+                    src="./assets/images/profile-pic.jpg"
+                    alt="Profile pic"
+                  />
+                </div>
+
+                <div class="col about-content">
+                  Hi, I'm Liam, a front-end developer, who likes building things
+                  with code. Currently living in sunny Devon, England, I
+                  recently began my journey into the world of web development. I
+                  have worked many civil engineering/construction and mining
+                  projects before, so I enjoy building things and watching
+                  things grow I am constantly learning, and growing as I as I
+                  try not get bombarded by information overload. When I am not
+                  working on coding projects, I like chess, sea swimming, and
+                  gym work. You will ofen find me dog walking or star gazing.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <!-- contact section -->
