@@ -328,10 +328,21 @@ textarea,
 }
 
 .contact-btn {
-  padding: 1.5% 3%;
   border: none;
+  padding: 1.5% 3%;
   border-radius: 12px;
-  background-color: #1db588;
+  background-color: #168d6a;
+  color: white;
+  box-shadow: 0px 0px 50px 1px rgba(249, 249, 247, 0.319);
+}
+
+.contact-btn:hover,
+.contact-btn:active,
+.contact-btn:focus {
+  color: white;
+  outline: none;
+  background-color: #1ca47c;
+  box-shadow: 10px 10px 50px 10px rgba(62, 62, 62, 0.241);
 }
 /* Footer */
 footer,
@@ -366,7 +377,7 @@ footer .jumbotron {
 
 .return-button:hover {
   color: white;
-  background-color: #168d6a;
+  background-color: #1ca47c;
 }
 .fa-arrow-up {
   color: white;
