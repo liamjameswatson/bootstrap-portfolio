@@ -75,10 +75,10 @@
         <div class="jumbotron jumbotron-fluid">
           <div class="container hero-container">
             <div class="hero-greeting">
-              <h1 class="display-4">Hello</h1>
+              <h1>Hello</h1>
               <h2>I'm Liam</h2>
-              <p class="lead">A Front end web developer</p>
-              <p>Welcome to my website...</p>
+              <p class="web-developer">A Front end web developer</p>
+              <p class="welcome">Welcome to my website...</p>
             </div>
           </div>
         </div>
@@ -604,6 +604,7 @@
 
             <form
               class="needs-validation"
+              novalidate
               action="https://formsubmit.co/liamjwatson@aol.com"
               method="POST"
             >
@@ -614,7 +615,7 @@
                     type="text"
                     class="form-control"
                     id="validationCustom01"
-                    placeholder="Name"
+                    placeholder="Name..."
                     name="name"
                     value=""
                     required
@@ -629,7 +630,7 @@
                       class="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
-                      placeholder="Enter email"
+                      placeholder="Email..."
                       name="email"
                       required
                     />
@@ -637,6 +638,7 @@
                       >I'll never share your email with anyone else.</small
                     >
                   </div>
+
                   <div class="valid-feedback">Looks good!</div>
                 </div>
 
@@ -647,7 +649,7 @@
                       class="form-control"
                       id="exampleFormControlTextarea1"
                       rows="3"
-                      placeholder="Message"
+                      placeholder="Type your message here..."
                       required
                       name="message"
                     ></textarea>
@@ -669,19 +671,20 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-4 text-center">
+            <div class="col-4 text-center social-link">
               <a href="https://github.com/liamjameswatson">
                 <i class="fa-brands fa-github icon-footer"></i>
                 <p>Github</p>
               </a>
             </div>
-            <div class="col-4 text-center">
+
+            <div class="col-4 text-center social-link">
               <a href="https://twitter.com/">
                 <i class="fa-brands fa-twitter icon-footer"></i>
                 <p>Twitter</p>
               </a>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-4 text-center social-link">
               <a href="mailto:liamjwatson@aol.com">
                 <i class="fa-solid fa-envelope icon-footer"></i>
                 <p>Email</p>
@@ -691,7 +694,7 @@
         </div>
       </div>
       <div>
-        <div class="text-center">
+        <div class="text-center return-div">
           <a href="#" class="btn return-button btn-lg btn-block mt-auto"
             ><i class="fa-solid fa-arrow-up"></i>Back to the top
             <i class="fa-solid fa-arrow-up"></i
