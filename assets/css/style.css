@@ -12,29 +12,17 @@
 html {
   scroll-behavior: smooth;
 }
-
-/* Whitespace between sections/section headers */
-/* Select all but not hero. */
-
-.row {
-  margin: 18px 0;
+/* reset jumbotron defaul margin */
+.jumbotron {
+  margin: 0;
 }
 
-.project-button {
-  background-color: #1db588;
-  border-radius: 24px;
-  color: white;
+section {
+  padding-bottom: 1% 0;
 }
 
-.project-button:hover,
-.project-button:active {
-  background-color: #168d6a;
-  color: white;
-  box-shadow: 10px 10px 10px #168d693f;
-}
-
-.project-button:active {
-  font-weight: 700;
+.sectionHeading {
+  padding: 1%;
 }
 
 /* End General styles/Whole page */
@@ -121,7 +109,22 @@ main,
 }
 
 /* End Hero Section */
+
+/* About Section */
+.profile-pic {
+  border-radius: 100%;
+}
+
+.about-content {
+  font-size: 18px;
+  line-height: 1.5;
+}
 /* Work Projects */
+
+.project-intro {
+  padding: 0 5%;
+  font-size: 18px;
+}
 
 .card {
   border: 10px solid rgba(13, 189, 224, 0.119);
@@ -155,6 +158,22 @@ main,
   border-radius: 24px;
 }
 
+.project-button {
+  background-color: #1db588;
+  border-radius: 24px;
+  color: white;
+}
+
+.project-button:hover,
+.project-button:active {
+  background-color: #168d6a;
+  color: white;
+  box-shadow: 10px 10px 10px #168d693f;
+}
+
+.project-button:active {
+  font-weight: 700;
+}
 /* Modals */
 .modal {
   border-radius: 24px;
@@ -207,6 +226,12 @@ main,
   margin: 24px 0;
 }
 
+.about-pic img {
+  margin: 24px auto;
+  padding: 2px;
+  background-color: rgba(28, 105, 117, 0.174);
+}
+
 .about-content p {
   padding-left: 10%;
 }
@@ -222,16 +247,6 @@ main,
 }
 
 /* End Skill Section */
-
-/* About Section */
-.profile-pic {
-  border-radius: 100%;
-}
-
-.about-content {
-  font-size: 18px;
-  line-height: 1.5;
-}
 
 /* Logos */
 
